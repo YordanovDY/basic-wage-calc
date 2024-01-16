@@ -1,51 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wage Calculator</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <form>
-        <label>Year</label>
-        <select>
-            <option value="2024">2024</option>
-            <option value="2025">2025</option>
-        </select>
-        <label>Month</label>
-        <select>
-            <option value="1">January</option>
-            <option value="2">February</option>
-            <option value="3">March</option>
-            <option value="4">April</option>
-            <option value="5">May</option>
-            <option value="6">June</option>
-            <option value="7">July</option>
-            <option value="8">August</option>
-            <option value="9">September</option>
-            <option value="10">October</option>
-            <option value="11">November</option>
-            <option value="12">December</option>
-        </select>
-        <label>Country</label>
-        <select>
-            <option value="us">USA</option>
-            <option value="fr">France</option>
-            <option value="bg">Bulgaria</option>
-        </select><br/>
-        <label>Hourly Payment</label>
-        <input type="text"><br/>
+        <div class="first-row-items">
+            <label for="year" class="first-row-labels">Year</label>
+            <label for="month" class="first-row-labels">Month</label>
+            <label for="country" class="first-row-labels">Country</label>
+        </div>
+
+        <div class="first-row-items">
+            <select class="select-box" name="year">
+                <option value="2024">2024</option>
+                <option value="2025">2025</option>
+            </select>
+
+            <select class="select-box" name="month">
+                <option value="1">January</option>
+                <option value="2">February</option>
+                <option value="3">March</option>
+                <option value="4">April</option>
+                <option value="5">May</option>
+                <option value="6">June</option>
+                <option value="7">July</option>
+                <option value="8">August</option>
+                <option value="9">September</option>
+                <option value="10">October</option>
+                <option value="11">November</option>
+                <option value="12">December</option>
+            </select>
+
+            <select class="select-box" name="country">
+                <option value="us">USA</option>
+                <option value="fr">France</option>
+                <option value="bg">Bulgaria</option>
+            </select>
+        </div> <br />
+        <label for="wage-box" class="second-row-labels">Hourly Payment</label>
+        <input type="text" id="wage-box"><br />
         <input type="radio" name="hours" value="4">
-        <label>4 hours</label><br/>
+        <label>4 hours</label><br />
         <input type="radio" name="hours" value="6">
-        <label>6 hours</label><br/>
+        <label>6 hours</label><br />
         <input type="radio" name="hours" value="8" checked>
-        <label>8 hours</label><br/>
+        <label>8 hours</label><br />
         <input type="radio" name="hours" value="12">
-        <label>12 hours</label><br/>
+        <label>12 hours</label><br />
     </form>
-    <label id=""></label> <!-- January 2024 has 22 working days. -->
-    <label id=""></label> <!-- 1/1/2024 - New Year's Day -->
-    <label id=""></label> <!-- With a daily payment of $12 for an 8-hour working day, you will receive $2112 at the end of the month. -->
+    <label id="working-days-info"></label> <!-- January 2024 has 22 working days. -->
+    <label id="holiday-info"></label> <!-- 1/1/2024 - New Year's Day -->
+    <label id="payment-info"></label>
+    <!-- With a daily payment of $12 for an 8-hour working day, you will receive $2112 at the end of the month. -->
 </body>
+
 </html>
