@@ -43,16 +43,25 @@
                 <option value="bg">Bulgaria</option>
             </select>
         </div> <br />
-        <label for="wage-box" class="second-row-labels">Hourly Payment</label>
-        <input type="text" id="wage-box"><br />
-        <input type="radio" name="hours" value="4">
-        <label>4 hours</label><br />
-        <input type="radio" name="hours" value="6">
-        <label>6 hours</label><br />
-        <input type="radio" name="hours" value="8" checked>
-        <label>8 hours</label><br />
-        <input type="radio" name="hours" value="12">
-        <label>12 hours</label><br />
+        
+        <div class="wage-group">
+            <label for="wage-box" class="second-row-labels">Hourly Payment:</label>
+            <input type="text" id="wage-box">
+        </div>
+        
+        <div class="radio-group">
+            <input type="radio" name="hours" value="4" id="hours-4">
+            <label for="hours-4">4 hours</label>
+
+            <input type="radio" name="hours" value="6" id="hours-6">
+            <label for="hours-6">6 hours</label>
+
+            <input type="radio" name="hours" value="8" id="hours-8" checked>
+            <label for="hours-8">8 hours</label>
+
+            <input type="radio" name="hours" value="12" id="hours-12">
+            <label for="hours-12">12 hours</label>
+        </div>
     </form>
     <label id="working-days-info"></label> <!-- January 2024 has 22 working days. -->
     <label id="holiday-info"></label> <!-- 1/1/2024 - New Year's Day -->

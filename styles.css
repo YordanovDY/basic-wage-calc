@@ -15,6 +15,7 @@ form {
     margin: 0 auto;
     font-family: 'Open Sans', 'Helvetica Neue', 'Segoe UI', 'Calibri', 'Arial', sans-serif;
     font-size: 18px;
+    text-align: center;
     color: darkblue;
 }
 
@@ -45,4 +46,21 @@ form {
     font-family: 'Open Sans', 'Helvetica Neue', 'Segoe UI', 'Calibri', 'Arial', sans-serif;
     font-size: 18px;
     color: darkblue;
+}
+
+.wage-group {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 30px;
+    padding-left: 20px;
+}
+
+.radio-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+@media (min-width: 600px) {
+    /* Apply additional styles for larger screens if needed */
 }
