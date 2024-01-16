@@ -15,3 +15,6 @@ The "Basic Wage Calculator" project provides a basic net salary solution for cal
 
 Just clone the repository and open the index.html file in your preferred web browser.
 
+## License
+
+This application does not utilize any specific licenses, providing users with flexibility in its usage and modification. Feel free to tailor it to your needs.
