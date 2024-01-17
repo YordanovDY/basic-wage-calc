@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <form>
+    <form id="main-form">
         <div class="first-row-items">
             <label for="year" class="first-row-labels">Year</label>
             <label for="month" class="first-row-labels">Month</label>
@@ -43,24 +43,32 @@
                 <option value="bg">Bulgaria</option>
             </select>
         </div> <br />
-        
+
         <div class="wage-group">
             <label for="wage-box" class="second-row-labels">Hourly Payment:</label>
             <input type="text" id="wage-box">
+            <label id="currency"></label>
         </div>
-        
+
         <div class="radio-group">
-            <input type="radio" name="hours" value="4" id="hours-4">
-            <label for="hours-4">4 hours</label>
+            <div class="radio-item">
+                <input type="radio" name="hours" value="4" id="hours-4" class="radio-buttons">
+                <label for="hours-4">4 hours</label>
+            </div>
 
-            <input type="radio" name="hours" value="6" id="hours-6">
-            <label for="hours-6">6 hours</label>
+            <div class="radio-item">
+                <input type="radio" name="hours" value="6" id="hours-6" class="radio-buttons">
+                <label for="hours-6">6 hours</label>
+            </div>
 
-            <input type="radio" name="hours" value="8" id="hours-8" checked>
-            <label for="hours-8">8 hours</label>
+            <div class="radio-item"><input type="radio" name="hours" value="8" id="hours-8" class="radio-buttons" checked>
+                <label for="hours-8">8 hours</label>
+            </div>
 
-            <input type="radio" name="hours" value="12" id="hours-12">
-            <label for="hours-12">12 hours</label>
+            <div class="radio-item">
+                <input type="radio" name="hours" value="12" id="hours-12" class="radio-buttons">
+                <label for="hours-12">12 hours</label>
+            </div>
         </div>
     </form>
     <label id="working-days-info"></label> <!-- January 2024 has 22 working days. -->
