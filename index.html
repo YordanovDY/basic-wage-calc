@@ -1,14 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Wage Calculator</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <form>
-        <label>Test</label>
-        <input type="text">
+    <form id="main-form">
+        <div class="first-row-items">
+            <label for="year" class="first-row-labels">Year</label>
+            <label for="month" class="first-row-labels">Month</label>
+            <label for="country" class="first-row-labels">Country</label>
+        </div>
+
+        <div class="first-row-items">
+            <select class="select-box" name="year">
+                <option value="2024">2024</option>
+                <option value="2025">2025</option>
+            </select>
+
+            <select class="select-box" name="month">
+                <option value="1">January</option>
+                <option value="2">February</option>
+                <option value="3">March</option>
+                <option value="4">April</option>
+                <option value="5">May</option>
+                <option value="6">June</option>
+                <option value="7">July</option>
+                <option value="8">August</option>
+                <option value="9">September</option>
+                <option value="10">October</option>
+                <option value="11">November</option>
+                <option value="12">December</option>
+            </select>
+
+            <select class="select-box" name="country">
+                <option value="us">USA</option>
+                <option value="fr">France</option>
+                <option value="bg">Bulgaria</option>
+            </select>
+        </div> <br />
+
+        <div class="wage-group">
+            <label for="wage-box" class="second-row-labels">Hourly Payment:</label>
+            <input type="text" id="wage-box">
+            <label id="currency"></label>
+        </div>
+
+        <div class="radio-group">
+            <div class="radio-item">
+                <input type="radio" name="hours" value="4" id="hours-4" class="radio-buttons">
+                <label for="hours-4">4 hours</label>
+            </div>
+
+            <div class="radio-item">
+                <input type="radio" name="hours" value="6" id="hours-6" class="radio-buttons">
+                <label for="hours-6">6 hours</label>
+            </div>
+
+            <div class="radio-item"><input type="radio" name="hours" value="8" id="hours-8" class="radio-buttons" checked>
+                <label for="hours-8">8 hours</label>
+            </div>
+
+            <div class="radio-item">
+                <input type="radio" name="hours" value="12" id="hours-12" class="radio-buttons">
+                <label for="hours-12">12 hours</label>
+            </div>
+        </div>
     </form>
+    <label id="working-days-info"></label> <!-- January 2024 has 22 working days. -->
+    <label id="holiday-info"></label> <!-- 1/1/2024 - New Year's Day -->
+    <label id="payment-info"></label>
+    <!-- With a daily payment of $12 for an 8-hour working day, you will receive $2112 at the end of the month. -->
 </body>
+
 </html>
